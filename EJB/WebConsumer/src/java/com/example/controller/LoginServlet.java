@@ -63,7 +63,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+       // processRequest(request, response);
     }
 
     /**
@@ -89,25 +89,7 @@ public class LoginServlet extends HttpServlet {
        }else{
             request.getRequestDispatcher("index.jsp").forward(request, response);
        }
-//       try
-//       {
-//       
-//           String username = request.getParameter("username");
-//       String password = request.getParameter("password");
-//       
-//       boolean status = checkLogin(username ,password);
-//       if(status){
-//           request.getRequestDispatcher("index.jsp").forward(request, response);
-//       }else{
-//            request.getRequestDispatcher("index.jsp").forward(request, response);
-//       }
-//       
-//       }catch(Exception ex){
-//       
-//       }
-       
-       
-       
+    
     }
 
     /**

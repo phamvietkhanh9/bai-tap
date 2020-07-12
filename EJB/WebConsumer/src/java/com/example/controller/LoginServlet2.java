@@ -61,7 +61,7 @@ public class LoginServlet2 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+       // processRequest(request, response);
     }
 
     /**
@@ -105,9 +105,9 @@ public class LoginServlet2 extends HttpServlet {
     }
 
     private boolean checkLogin(String username, String password) {
-       // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    com.example.model.LoginWebService port = service.getLoginWebServicePort();
-        return port.login(username, password);
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    com.example.model.LoginWebService port = service.getLoginWebServicePort();
+//        return port.login(username, password);
     }
 
 }
